@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(315deg, #e8c99b 0%, #7ab3e2 74%);;
+  }
+  .login-form {
+    font-family: arial;
+    color: #333;
+  }
+  .login-form form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px 40px 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: linear-gradient(315deg, #e8c99b 0%, #7ab3e2 74%);;
+  }
+  .login-form h2 {
+    text-align: center;
+    font-size: 23px;
+    margin: 10px 0px 20px;
+  }
+  .login-form input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    height: 37px;
+    margin: 0px 0px 28px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  .login-form button {
+    margin: 5px auto 10px;
+    display: table;
+    font-size: 16px;
+    padding: 10px 33px;
+    background-color: #FF6B81;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-form button:hover{
+  opacity: 0.8;
+  }
+  
+  .login-form .forget-psw {
+    float: left;
+  }
+  .login-form .forget-psw a {
+    color: #FF6B81;
+    text-decoration: none;
+  }
+  .social-btn button.google-btn, .social-btn button.facebook-btn {
+    width: 100%;
+    font-size: 13px;
+    margin: 0px 0px 10px;
+  }
+  .social-btn button.google-btn{
+  background-color: #dd4b39;
+  }
+  .social-btn button.facebook-btn{
+  background-color: #3f68be;
+  }
+  .social-btn {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    margin-top: 45px;
+  }
+  .social-btn button i {
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  @media (max-width: 767px){
+  .login-form form {
+    width: 100%;
+    padding: 20px 15px 30px;
+  }
+  .social-btn button.google-btn, .social-btn button.facebook-btn {
+    font-size: 15px;
+  }
+  
+  .google {
+  background-color: #dd4b39;
+  color: white;
+  }
+  
+  ion-card{
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  background: blue;
+  width: 500px;
+  }
+  
+  ion-content ion-card{
+  background: yellow!important;
+  width: 100%;
+  }
+  
+  }

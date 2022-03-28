@@ -1,0 +1,36 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+</style>
+
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <center><img src="assets/GP.png" width="65%"></center>
+      <h1>WELCOME TO GP HUB!</h1>
+    </div>
+
+    <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item class="item" color="white">
+          <ion-label class="item" position="floating">Email</ion-label>
+          <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+        </ion-item>
+      </div>
+      
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item class="item" color="white">
+          <ion-label class="item" position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+        </ion-item>
+      </div>
+    </div>
+
+    <div class="action-buttons ion-padding">
+      <ion-button size="large"  fill=outline class="login-button" (click)="login(user)">Log In</ion-button>
+      <br>
+      <p>Create new an account<a href='../register'><br>REGISTER</a></p>
+    </div>
+  </div>
+</ion-content>

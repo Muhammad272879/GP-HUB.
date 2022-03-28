@@ -1,0 +1,38 @@
+<ion-header>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <ion-toolbar color="warning">
+    <ion-title class= "ion-text-center">HELP</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button>Back</ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+
+      <div class="login-form">
+        <form>
+          <h2><b>What do you need?</b></h2>
+          <ion-item>
+            <ion-label position="stacked">Name</ion-label>
+              <ion-input name="name" type="text" [(ngModel)]="post.name" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked">Email</ion-label>
+                <ion-input name="email" type="text" [(ngModel)]="post.email" required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="stacked">Message</ion-label>
+                  <ion-input name="message" type="text" [(ngModel)]="post.message"></ion-input>
+                </ion-item>
+                <br>
+              <ion-button (click)="createPost(post)" (click)="display()" color="warning">Publish</ion-button>

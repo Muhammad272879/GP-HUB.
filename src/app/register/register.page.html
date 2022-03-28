@@ -1,0 +1,39 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+</style>
+
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Create Your Account!</h1>
+    </div>
+
+    <div class="login-form">
+      
+      <div class="form-input">
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-item class="item" color="white">
+          <ion-label class="item" position="floating">
+            <p>Email</p>
+          </ion-label>
+          <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+        </ion-item>
+      </div>
+      
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item class="item" color="white">
+          <ion-label class="item" position="floating">
+            <p>Password</p>
+          </ion-label>
+          <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+        </ion-item>
+      </div>
+    </div>
+      
+    <div class="action-buttons ion-padding">
+      <ion-button size="large" fill="outline" class="login-button" (click)="register(user)">Sign up</ion-button>
+      <p><strong>Already have an account ?</strong><a href='../login'><br>LOGIN</a></p>
+    </div>
+  </div>
+</ion-content>

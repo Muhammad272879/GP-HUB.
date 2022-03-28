@@ -1,20 +1,110 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color=warning class="ion-text-center">
+    <ion-title color="dark" class="header">HOME</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card style="background-color:#7a181d;color: white;" >
+    <ion-card-header>
+      <img src="assets/GP.png" >
+    </ion-card-header>
+  
+    <ion-card-content>
+      GP Hub provides us with many information about gaming peripherals that are whether available on the market or not.
+      There are tons of gamers out there but not every gamer understand or know the difference between many gaming peripherals.
+    </ion-card-content>
+  </ion-card>
+   <br>
+  <h4 class="ion-text-center" font><strong>GAMING PERIPHERALS<br>RECOMMENDATION</strong></h4>
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="warning" [routerLink]="['/keyboard']">
+            <ion-avatar slot="start">
+              <img src ="assets/apex.jpg" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">KEYBOARD</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="warning" [routerLink]="['/mouse']">
+            <ion-avatar slot="start">
+              <img src ="assets/g502.jpg" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">MOUSE</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="warning" [routerLink]="['/headset']">
+            <ion-avatar slot="start">
+              <img src ="assets/HyperX-Cloud-Alpha-Gaming-Headset.jpg" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">GAMING
+              <br>HEADSET</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <h4 class="ion-text-center" font><strong>MORE GAMING
+    <br>ACCESSORIES</strong></h4>
+  <ion-grid>
+    <ion-row>
+
+  
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="warning" [routerLink]="['/mousepad']">
+            <ion-avatar slot="start">
+              <img src ="assets/2762513-xl-a.jpg" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">MOUSEPAD</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-card  class="title">
+          <ion-item color="warning" [routerLink]="['/chair']">
+            <ion-avatar slot="start">
+              <img src ="assets/download.png" width="100%">
+              </ion-avatar>
+            <ion-label>
+            <h4 class="ion-text-center">GAMING CHAIR</h4>
+          </ion-label>
+        </ion-item>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    
+  </ion-grid>
+  
+  <br>
+
+  
 </ion-content>
